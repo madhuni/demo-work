@@ -1,0 +1,18 @@
+@mixin atMedium {
+	@media screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+
+@mixin atSmall {
+	@media screen and (max-width: 720px) {
+		@content;
+	}
+}
+
+@mixin atPhone {
+	@media screen and (max-width: 617px) {
+		@content;
+	}
+}
