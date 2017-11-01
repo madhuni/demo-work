@@ -1,2 +1,2 @@
-# Ethereal-Machines.github.io
-Code that powers ethermachines.com
+# Demo Project for setting up the modern work-flow for Frontend Web Development
+
