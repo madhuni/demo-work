@@ -1,0 +1,1 @@
+$(function(){$('a[href^="#"]').click(function(e){var t,o=$(this).attr("href").slice(1);t="home"!==o?$("div[id='"+o+"']"):$("header[id='"+o+"']"),e.preventDefault(),$("body").animate({scrollTop:t.offset().top},1e3),$("html").animate({scrollTop:t.offset().top},1e3)})});
