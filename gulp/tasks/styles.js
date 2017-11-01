@@ -9,12 +9,12 @@ cssImport = require('postcss-import'), // to download the code where the import 
 mixins = require('postcss-mixins');
 
 gulp.task('styles', function () {
-    return gulp.src('./assets/styles/styles.scss')
+    return gulp.src('./app/assets/styles/styles.scss')
       .on('error', function (errorInfo) {
         console.log(errorInfo.toString());
         this.emit('end');
       })
       .pipe(sass({ style: 'expanded'}))
       .pipe(autoprefixer("last 3 version", "safari 5", "ie 8", "ie 9"))
-      .pipe(gulp.dest('./temp/styles'));
+      .pipe(gulp.dest('./app/temp/styles'));
 });
